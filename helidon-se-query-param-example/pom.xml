@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>io.helidon.applications</groupId>
+		<artifactId>helidon-se</artifactId>
+		<version>2.5.0</version>
+		<relativePath>../../../applications/se/pom.xml</relativePath>
+	</parent>
+
+	<groupId>com.knf.dev.demo</groupId>
+	<artifactId>helidon-se-query-param-example</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>helidon-se-query-param-example</name>
+	<description>Demo project for Helidon SE</description>
+
+	<properties>
+		<version.java>17</version.java>
+		<mainClass>com.knf.dev.demo.helidonseresthelloworld.HelidonSeRestHelloWorldApplication</mainClass>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>io.helidon.webserver</groupId>
+			<artifactId>helidon-webserver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.helidon.media</groupId>
+			<artifactId>helidon-media-jsonp</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+
+				<configuration>
+					<source>${version.java}</source>
+					<target>${version.java}</target>
+					<release>${version.java}</release>
+					<forceJavacCompilerUse>true</forceJavacCompilerUse>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
